@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kite — A gentle guide for their first years online</title>
+  <meta name="description" content="Kite sends parents a short, friendly summary of how their kids are doing online — instead of a log of everything they do.">
+
+  <!-- Headlines: Source Serif 4, optical size axis kept so we can pin it to 8 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
+  <!-- Body: full (unsubsetted) builds — Google Fonts strips ss/cv features -->
+  <link rel="preconnect" href="https://rsms.me">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ───────────────────────── Nav ───────────────────────── -->
+<nav class="nav">
+  <a class="brand glass" href="#top" aria-label="Kite home">
+    <svg class="brand-mark" viewBox="0 0 28 36" aria-hidden="true">
+      <path d="M14 1.5 25 12 14 24.5 3 12Z" fill="currentColor"/>
+      <path d="M14 1.5v23M3 12h22" stroke="var(--bg)" stroke-width="1.2" opacity=".55"/>
+      <path d="M14 24.5c-1.5 3 2.5 4.2.6 6.6-1.3 1.7-3.4 1.6-4.4 3.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </svg>
+    <span class="serif">Kite</span>
+  </a>
+  <div class="nav-pill glass">
+    <a href="#how">How it works</a>
+    <a href="#grow">Growing up</a>
+    <a href="#compare">Compare</a>
+    <a class="btn btn-sm" href="#waitlist">Join the waitlist</a>
+  </div>
+</nav>
+
+<!-- ───────────────────────── Hero ───────────────────────── -->
+<header class="hero" id="top">
+  <div class="mesh mesh-hero" aria-hidden="true">
+    <i style="--c:var(--peach);  --s:58vw; --t:-8%;  --l:52%; --d:28s; --x1:-6vw; --y1:5vh;  --x2:4vw;  --y2:-3vh"></i>
+    <i style="--c:var(--rose);   --s:44vw; --t:30%;  --l:70%; --d:34s; --x1:-8vw; --y1:-6vh; --x2:-2vw; --y2:6vh"></i>
+    <i style="--c:var(--butter); --s:40vw; --t:52%;  --l:40%; --d:31s; --x1:7vw;  --y1:-4vh; --x2:-5vw; --y2:-8vh"></i>
+    <i style="--c:var(--apricot);--s:26vw; --t:18%;  --l:78%; --d:23s; --x1:-4vw; --y1:8vh;  --x2:3vw;  --y2:2vh"></i>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 id="headline" class="serif display-1">Less spying. More <em>guiding</em>.</h1>
+      <p class="lede">Kite reads the firehose so you don’t have to, then sends you a short, friendly note on how your kid is <em>actually</em> doing online. Ten minutes to set up. No tech degree required.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#waitlist">Join the waitlist</a>
+        <span class="hero-note">Coming 2027 to iPhone&nbsp;&amp;&nbsp;Android</span>
+      </div>
+    </div>
+
+    <div class="hero-device" data-speed="-0.08">
+      <div class="notif glass" data-speed="-0.05">
+        <div class="notif-app"><span class="notif-icon"><svg viewBox="0 0 28 36"><path d="M14 3 24 12.5 14 23.5 4 12.5Z" fill="currentColor"/></svg></span>Kite <time>Sun 9:00</time></div>
+        <p><b>Maya’s week is ready.</b> A good one, mostly — 2 minute read.</p>
+      </div>
+
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="island"></div>
+          <div class="status"><span>9:41</span><span class="status-icons"><i></i><i></i><i></i></span></div>
+          <div class="app">
+            <div class="app-top">
+              <span class="app-date">Sunday, October 12</span>
+              <span class="app-kid">M</span>
+            </div>
+            <h2 class="serif app-title">Maya’s week</h2>
+            <p class="app-summary">A social one. Most of her time went to building in Minecraft with Theo and Ana, and she finished two Khan Academy units on fractions.</p>
+
+            <div class="app-split" aria-label="Time by category">
+              <span style="--w:38%; --c:#E3956A"></span>
+              <span style="--w:27%; --c:#EDC3A4"></span>
+              <span style="--w:21%; --c:#AEB79F"></span>
+              <span style="--w:14%; --c:#D8CEC3"></span>
+            </div>
+            <ul class="app-legend">
+              <li><i style="--c:#E3956A"></i>Creating</li>
+              <li><i style="--c:#EDC3A4"></i>Friends</li>
+              <li><i style="--c:#AEB79F"></i>School</li>
+              <li><i style="--c:#D8CEC3"></i>Videos</li>
+            </ul>
+
+            <div class="app-card">
+              <span class="app-card-label">Worth a chat</span>
+              <h3>Wednesday ran late</h3>
+              <p>YouTube until 11:40pm on a school night. Maybe ask how she’s sleeping, rather than what she watched.</p>
+              <span class="app-card-link">Ideas for bringing it up →</span>
+            </div>
+
+            <p class="app-private">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="7" width="10" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+              Maya’s messages and searches stay hers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ───────────────────────── Contrast ───────────────────────── -->
+<section class="contrast">
+  <div class="wrap">
+    <h2 class="serif display-2 reveal">Other apps hand you a transcript. Kite hands you a&nbsp;<em>conversation</em>.</h2>
+
+    <div class="contrast-grid">
+      <figure class="log reveal">
+        <div class="log-window"><div class="log-lines" id="log"></div></div>
+        <figcaption><b>1,284 entries.</b> What a typical monitoring app sends you in a week.</figcaption>
+      </figure>
+
+      <figure class="digest reveal">
+        <blockquote class="serif">“Maya had a social week. Most of her time went to a group chat with three friends from school, and she’s gotten really into drawing tutorials. Wednesday ran late, worth a gentle check-in. Otherwise, she seems to be in a good place.”</blockquote>
+        <figcaption><b>42 words.</b> What Kite sends you.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 01 Setup ───────────────────────── -->
+<section class="chapter setup" id="how">
+  <div class="wrap">
+    <div class="chapter-head">
+      <p class="kicker reveal"><span class="kicker-n">01</span><span class="kicker-rule"></span>Setup</p>
+      <h2 class="serif display-2 reveal">Ten minutes.<br>Then you’re done.</h2>
+      <p class="sub reveal">No router settings, no VPN profiles, no forty-tab dashboard. If you can text a photo, you can set up Kite.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="reveal">
+        <span class="step-n serif">1</span>
+        <h3>Download Kite</h3>
+        <p>On your own phone. It walks you through everything else.</p>
+      </li>
+      <li class="reveal">
+        <span class="step-n serif">2</span>
+        <h3>Scan the code</h3>
+        <p>Hold your kid’s device up to your screen. They’re linked in seconds.</p>
+      </li>
+      <li class="reveal">
+        <span class="step-n serif">3</span>
+        <h3>Tell us their age</h3>
+        <p>Kite starts with sensible defaults for where they are. Change anything, anytime.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ───────────────────────── Full-bleed photo ───────────────────────── -->
+<section class="bleed" aria-label="A kid riding a bike down a foggy road">
+  <div class="bleed-media">
+    <img data-speed="0.1" src="https://images.unsplash.com/photo-1634303668984-6a0bc36cf054?w=2400&q=80&auto=format&fit=crop" alt="">
+  </div>
+  <div class="wrap bleed-copy">
+    <p class="serif display-3 reveal">The goal was never less screen. It’s more of <em>everything else</em>.</p>
+  </div>
+</section>
+
+<!-- ───────────────────────── 02 Guide, not spy ───────────────────────── -->
+<section class="chapter guide">
+  <div class="wrap guide-grid">
+    <div class="guide-media reveal">
+      <div class="guide-photo">
+        <img data-speed="0.06" src="https://images.unsplash.com/photo-1486403184395-fc4990866136?w=1600&q=80&auto=format&fit=crop" alt="A teenage girl smiling at her phone in warm evening light">
+      </div>
+      <div class="heads-up glass" data-speed="-0.06">
+        <span class="heads-up-label">This week, in one line</span>
+        <p class="serif">“Lena’s screen time is steady, and she’s picked up chess again. Nothing to worry about.”</p>
+      </div>
+    </div>
+
+    <div class="guide-copy">
+      <p class="kicker reveal"><span class="kicker-n">02</span><span class="kicker-rule"></span>Guide, not spy</p>
+      <h2 class="serif display-2 reveal">Summaries, not surveillance.</h2>
+      <p class="sub reveal">Kite pays attention to patterns: how much, when, and what kind. Then it tells you what matters in plain English. If something serious ever comes up, you’ll hear about it right away, with clear next steps.</p>
+
+      <div class="ledger reveal">
+        <div>
+          <h3>You’ll hear about</h3>
+          <ul>
+            <li>How much time, and when</li>
+            <li>What they’re into lately</li>
+            <li>Changes worth a conversation</li>
+            <li>Anything genuinely risky</li>
+          </ul>
+        </div>
+        <div class="ledger-private">
+          <h3>You won’t see</h3>
+          <ul>
+            <li>Their messages</li>
+            <li>Every search and video</li>
+            <li>A minute-by-minute log</li>
+            <li>Anything “just in case”</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 03 Grows with them ───────────────────────── -->
+<section class="chapter grow" id="grow">
+  <div class="mesh mesh-grow" aria-hidden="true">
+    <i style="--c:var(--butter); --s:50vw; --t:-10%; --l:-10%; --d:32s; --x1:8vw;  --y1:6vh;  --x2:2vw;  --y2:-4vh"></i>
+    <i style="--c:var(--peach);  --s:38vw; --t:45%;  --l:72%;  --d:27s; --x1:-6vw; --y1:-8vh; --x2:-10vw;--y2:3vh"></i>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="chapter-head">
+      <p class="kicker reveal"><span class="kicker-n">03</span><span class="kicker-rule"></span>Grows with them</p>
+      <h2 class="serif display-2 reveal">A dial, not a switch.</h2>
+      <p class="sub reveal">Most parental controls are either on or off. Kite loosens its grip a little each year, so the day they get the whole internet isn’t a cliff. It’s just the next step.</p>
+    </div>
+
+    <div class="dial reveal">
+      <div class="dial-age">
+        <span class="serif dial-num" id="ageNum">12</span>
+        <span class="dial-unit">years old</span>
+      </div>
+      <div class="dial-body">
+        <h3 class="serif" id="stageName">Building judgment</h3>
+        <p id="stageText">Your kid sees the exact same summary you do. No secrets in either direction.</p>
+        <div class="balance">
+          <div class="balance-bar"><span id="balYou"></span><span id="balThem"></span></div>
+          <div class="balance-labels"><span>What you see</span><span>What’s theirs</span></div>
+        </div>
+      </div>
+      <div class="dial-control">
+        <input type="range" id="ageRange" min="8" max="17" step="1" value="12" aria-label="Child’s age">
+        <div class="dial-ticks" aria-hidden="true">
+          <span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 04 Conversation ───────────────────────── -->
+<section class="chapter talk">
+  <div class="wrap">
+    <div class="talk-head">
+      <p class="kicker reveal"><span class="kicker-n">04</span><span class="kicker-rule"></span>Better conversations</p>
+      <h2 class="serif display-2 reveal">Made for the dinner table, not the interrogation room.</h2>
+      <p class="sub reveal">Every summary ends with one easy way to start a conversation, written for your kid’s age. Never a gotcha.</p>
+    </div>
+  </div>
+  <div class="talk-media reveal">
+    <img data-speed="0.1" src="https://images.unsplash.com/photo-1627662167802-d58480978ec0?w=2400&q=80&auto=format&fit=crop" alt="A father and two kids laughing over dinner">
+    <div class="starter glass">
+      <span class="starter-label">Try asking</span>
+      <p class="serif">“I noticed you’ve been drawing a lot lately. Will you show me what you’ve been making?”</p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── Compare ───────────────────────── -->
+<section class="compare" id="compare">
+  <div class="wrap">
+    <h2 class="serif display-2 reveal">How Kite is different.</h2>
+    <div class="table-scroll reveal">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th scope="col"><span class="sr">Question</span></th>
+            <th scope="col" class="is-kite"><span class="serif">Kite</span></th>
+            <th scope="col">Monitoring apps</th>
+            <th scope="col">Built-in screen time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Setting it up</th>
+            <td class="is-kite">About ten minutes. Scan a code, pick an age.</td>
+            <td>Device profiles, VPNs, sometimes router changes.</td>
+            <td>Buried in settings, one device at a time.</td>
+          </tr>
+          <tr>
+            <th scope="row">What you get</th>
+            <td class="is-kite">A short weekly note in plain English.</td>
+            <td>Alerts and activity logs to dig through.</td>
+            <td>Bar charts of minutes per app.</td>
+          </tr>
+          <tr>
+            <th scope="row">Your kid’s role</th>
+            <td class="is-kite">Sees what you see. In on it from day one.</td>
+            <td>Often kept in the dark.</td>
+            <td>On the receiving end of limits.</td>
+          </tr>
+          <tr>
+            <th scope="row">As they grow up</th>
+            <td class="is-kite">Steps back a little every year.</td>
+            <td>Same level of watching at 8 or 17.</td>
+            <td>Whatever you remember to change.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── Testimonials (placeholder) ───────────────────────── -->
+<section class="voices">
+  <div class="wrap">
+    <div class="voices-lead">
+      <figure class="voice-main reveal">
+        <span class="placeholder-tag">Placeholder testimonial</span>
+        <blockquote class="serif display-3">“A real quote from a beta parent goes here. Ideally the moment they realized they didn’t have to read everything anymore.”</blockquote>
+        <figcaption><b>Parent name</b> · City, State · Kids 9 &amp; 13</figcaption>
+      </figure>
+      <div class="voice-photo reveal">
+        <img data-speed="0.05" src="https://images.unsplash.com/photo-1560707856-3af2ff5ea652?w=1200&q=80&auto=format&fit=crop" alt="A mother and young daughter smiling at each other">
+      </div>
+    </div>
+
+    <div class="voices-more">
+      <figure class="reveal">
+        <span class="placeholder-tag">Placeholder</span>
+        <blockquote>“A shorter quote about setup. Something like: my kid set it up with me in less time than it took to find the remote.”</blockquote>
+        <figcaption><b>Parent name</b> · Kid, 11</figcaption>
+      </figure>
+      <figure class="reveal">
+        <span class="placeholder-tag">Placeholder</span>
+        <blockquote>“A quote from a teen, if we can get one. Kids vouching for Kite will carry more weight than anything we can say.”</blockquote>
+        <figcaption><b>Teen’s first name</b> · 15</figcaption>
+      </figure>
+      <figure class="reveal">
+        <span class="placeholder-tag">Placeholder</span>
+        <blockquote>“A quote from a counselor, pediatrician, or educator about the guide-not-spy approach.”</blockquote>
+        <figcaption><b>Name</b> · Title, Organization</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── Waitlist ───────────────────────── -->
+<section class="waitlist" id="waitlist">
+  <div class="mesh mesh-waitlist" aria-hidden="true">
+    <i style="--c:var(--apricot); --s:60vw; --t:20%;  --l:-12%; --d:30s; --x1:10vw; --y1:-6vh; --x2:4vw;  --y2:8vh"></i>
+    <i style="--c:var(--rose);    --s:52vw; --t:-20%; --l:45%;  --d:26s; --x1:-8vw; --y1:10vh; --x2:6vw;  --y2:4vh"></i>
+    <i style="--c:var(--butter);  --s:46vw; --t:45%;  --l:62%;  --d:35s; --x1:-12vw;--y1:-4vh; --x2:-4vw; --y2:-10vh"></i>
+    <i style="--c:var(--peach);   --s:34vw; --t:55%;  --l:22%;  --d:22s; --x1:6vw;  --y1:-10vh;--x2:12vw; --y2:2vh"></i>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="wrap waitlist-inner">
+    <h2 class="serif display-1 reveal">Be one of the first families on&nbsp;Kite.</h2>
+    <div class="waitlist-side reveal">
+      <p class="sub">We’re opening Kite to a small group of families first. Leave your email and we’ll save you a spot.</p>
+      <form class="signup glass" id="signup" novalidate>
+        <label for="email" class="sr">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <button class="btn" type="submit">Save my spot</button>
+      </form>
+      <p class="signup-msg" id="signupMsg" role="status" aria-live="polite">One email when we launch, maybe one before. That’s it.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a class="brand" href="#top" aria-label="Kite home">
+      <svg class="brand-mark" viewBox="0 0 28 36" aria-hidden="true"><path d="M14 1.5 25 12 14 24.5 3 12Z" fill="currentColor"/><path d="M14 24.5c-1.5 3 2.5 4.2.6 6.6-1.3 1.7-3.4 1.6-4.4 3.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      <span class="serif">Kite</span>
+    </a>
+    <p>A gentle guide for their first years online.</p>
+    <p class="footer-fine">© 2026 Kite (working name) · Privacy · Contact</p>
+  </div>
+</footer>
+
+<!-- ───────────────────────── Design options (review only) ───────────────────────── -->
+<aside class="tweaks glass" id="tweaks" data-open="true">
+  <button class="tweaks-toggle" id="tweaksToggle" aria-expanded="true">
+    <span>Design options</span>
+    <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.5 6 8l4-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+  </button>
+  <div class="tweaks-body">
+    <div class="tw-group">
+      <div class="tw-label">Headline</div>
+      <div class="tw-seg" id="twHeadline" role="radiogroup" aria-label="Headline"></div>
+    </div>
+    <div class="tw-group">
+      <div class="tw-label">Body font</div>
+      <div class="tw-list" id="twFont" role="radiogroup" aria-label="Body font"></div>
+    </div>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
