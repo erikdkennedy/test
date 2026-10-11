@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Kite</title>
+  <meta name="description" content="Questions, ideas, or a story about your own kid’s first phone. A real person reads every note.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://rsms.me">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ───────────────────────── Nav ───────────────────────── -->
+<nav class="nav">
+  <a class="brand glass" href="index.html" aria-label="Kite home">
+    <svg class="brand-mark" viewBox="0 0 28 36" aria-hidden="true">
+      <path d="M14 1.5 25 12 14 24.5 3 12Z" fill="currentColor"/>
+      <path d="M14 1.5v23M3 12h22" stroke="var(--bg)" stroke-width="1.2" opacity=".55"/>
+      <path d="M14 24.5c-1.5 3 2.5 4.2.6 6.6-1.3 1.7-3.4 1.6-4.4 3.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </svg>
+    <span class="serif">Kite</span>
+  </a>
+  <div class="nav-pill glass">
+    <a href="index.html#how">How it works</a>
+    <a href="index.html#grow">Growing up</a>
+    <a href="index.html#compare">Compare</a>
+    <a href="about.html">About</a>
+    <a class="btn btn-sm" href="index.html#waitlist">Join the waitlist</a>
+  </div>
+</nav>
+
+<!-- ───────────────────────── Contact ───────────────────────── -->
+<main class="page-hero contact">
+  <div class="mesh mesh-hero" aria-hidden="true">
+    <i style="--c:var(--peach);  --s:52vw; --t:-30%; --l:48%; --d:28s; --x1:-6vw; --y1:5vh;  --x2:4vw;  --y2:-3vh"></i>
+    <i style="--c:var(--rose);   --s:40vw; --t:30%;  --l:74%; --d:34s; --x1:-8vw; --y1:-6vh; --x2:-2vw; --y2:6vh"></i>
+    <i style="--c:var(--butter); --s:36vw; --t:55%;  --l:-8%; --d:31s; --x1:7vw;  --y1:-4vh; --x2:-5vw; --y2:-8vh"></i>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="wrap contact-grid">
+    <div class="contact-intro">
+      <p class="kicker"><span class="kicker-rule"></span>Contact</p>
+      <h1 class="serif display-1">Say <em>hello</em>.</h1>
+      <p class="sub">Questions, ideas, or a story about your own kid’s first phone. A real person reads every note and writes back, usually within two business days.</p>
+
+      <dl class="channels">
+        <span class="placeholder-tag">Placeholder addresses</span>
+        <div>
+          <dt>Parents &amp; families</dt>
+          <dd><a href="mailto:hello@kite.example">hello@kite.example</a></dd>
+        </div>
+        <div>
+          <dt>Schools &amp; counselors</dt>
+          <dd><a href="mailto:schools@kite.example">schools@kite.example</a></dd>
+        </div>
+        <div>
+          <dt>Press</dt>
+          <dd><a href="mailto:press@kite.example">press@kite.example</a></dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="contact-side">
+      <form class="contact-form glass" id="contactForm" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="cName">Your name</label>
+            <input id="cName" name="name" type="text" autocomplete="name" placeholder="Jordan">
+          </div>
+          <div class="field">
+            <label for="cEmail">Email</label>
+            <input id="cEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <fieldset class="field">
+          <legend>What’s this about?</legend>
+          <div class="chips">
+            <label><input type="radio" name="topic" value="question" checked><span>A question</span></label>
+            <label><input type="radio" name="topic" value="feedback"><span>Feedback or an idea</span></label>
+            <label><input type="radio" name="topic" value="school"><span>Schools</span></label>
+            <label><input type="radio" name="topic" value="press"><span>Press</span></label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="cMessage">Message</label>
+          <textarea id="cMessage" name="message" rows="6" placeholder="Tell us what’s on your mind." required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send message</button>
+      </form>
+      <p class="signup-msg contact-msg" id="contactMsg" role="status" aria-live="polite">We’ll only use your email to reply.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a class="brand" href="index.html" aria-label="Kite home">
+      <svg class="brand-mark" viewBox="0 0 28 36" aria-hidden="true"><path d="M14 1.5 25 12 14 24.5 3 12Z" fill="currentColor"/><path d="M14 24.5c-1.5 3 2.5 4.2.6 6.6-1.3 1.7-3.4 1.6-4.4 3.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      <span class="serif">Kite</span>
+    </a>
+    <p>A gentle guide for their first years online.</p>
+    <p class="footer-fine">© 2026 Kite (working name) · <a href="about.html">About</a> · Privacy · <a href="contact.html">Contact</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

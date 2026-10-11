@@ -25,6 +25,7 @@
 
   const h1 = $('#headline');
   const segH = $('#twHeadline');
+  if (h1 && segH) {
   function setHeadline(i) {
     h1.innerHTML = HEADLINES[i];
     h1.style.setProperty('--h1', sizeFor(HEADLINES[i]));
@@ -42,6 +43,7 @@
     segH.appendChild(b);
   });
   setHeadline(Math.min(+store.get('kite-headline') || 0, HEADLINES.length - 1));
+  }
 
   /* ───────── Body font options ───────── */
   // Both families are loaded as full builds; Google's versions drop ss/cv features.
@@ -60,10 +62,10 @@
     const f = FONTS[i];
     document.documentElement.style.setProperty('--sans', f.family);
     document.documentElement.style.setProperty('--sans-features', f.features);
-    listF.querySelectorAll('button').forEach((b, j) => b.setAttribute('aria-checked', String(i === j)));
+    listF?.querySelectorAll('button').forEach((b, j) => b.setAttribute('aria-checked', String(i === j)));
     store.set('kite-font', i);
   }
-  FONTS.forEach((f, i) => {
+  if (listF) FONTS.forEach((f, i) => {
     const b = document.createElement('button');
     b.type = 'button';
     b.role = 'radio';
@@ -75,6 +77,7 @@
 
   const tweaks = $('#tweaks');
   const toggle = $('#tweaksToggle');
+  if (tweaks && toggle) {
   function setOpen(open) {
     tweaks.dataset.open = String(open);
     toggle.setAttribute('aria-expanded', String(open));
@@ -82,8 +85,10 @@
   }
   toggle.addEventListener('click', () => setOpen(tweaks.dataset.open !== 'true'));
   setOpen(store.get('kite-tweaks-open') === '1');
+  }
 
   /* ───────── The "spy" log ───────── */
+  if ($('#log')) {
   const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
   const events = [
     ['youtube.com/watch?v=', true, 'm'], ['Messages  →  “Ana”', false, ''], ['Search  “how to draw hands”', false, ''],
@@ -102,6 +107,7 @@
     rows += `<div><span class="t">${t}</span><span>${label}${withId ? id() : ''}</span><span class="d">${d}</span></div>`;
   }
   $('#log').innerHTML = rows + rows; // doubled for a seamless loop
+  }
 
   /* ───────── Age dial ───────── */
   const STAGES = [
@@ -112,6 +118,7 @@
     { max: 17, name: 'Ready for launch',  text: 'A monthly check-in, then Kite hands them the keys, along with a look back at how far they’ve come.' },
   ];
   const range = $('#ageRange');
+  if (range) {
   const ticks = [...document.querySelectorAll('.dial-ticks span')];
   function setAge() {
     const age = +range.value;
@@ -127,11 +134,12 @@
   }
   range.addEventListener('input', setAge);
   setAge();
+  }
 
   /* ───────── Waitlist (static for now) ───────── */
   const form = $('#signup');
   const msg = $('#signupMsg');
-  form.addEventListener('submit', (e) => {
+  form?.addEventListener('submit', (e) => {
     e.preventDefault();
     const email = $('#email').value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -144,6 +152,28 @@
     msg.classList.remove('is-error');
     msg.classList.add('is-done');
     msg.textContent = 'You’re on the list. We’ll be in touch.';
+  });
+
+  /* ───────── Contact form (static for now) ───────── */
+  const contact = $('#contactForm');
+  const contactMsg = $('#contactMsg');
+  contact?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = $('#cEmail').value.trim();
+    const message = $('#cMessage').value.trim();
+    let error = '';
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) error = 'That email doesn’t look quite right. Mind checking it?';
+    else if (!message) error = 'Don’t forget the message. Even one line is plenty.';
+    if (error) {
+      contactMsg.textContent = error;
+      contactMsg.classList.add('is-error');
+      return;
+    }
+    // TODO: send to the real inbox / form provider.
+    contact.classList.add('is-done');
+    contactMsg.classList.remove('is-error');
+    contactMsg.classList.add('is-done');
+    contactMsg.textContent = 'Thanks. Your note is on its way, and a real person will write back.';
   });
 
   /* ───────── Reveal on scroll ───────── */
